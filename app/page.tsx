@@ -46,7 +46,7 @@ export default function Home() {
         </Text>
         <Box as="ul" pl={4} listStyleType="disc">
           <Box as="li" mb={2}>
-            TypeScript support
+            TypeScript support only comes once 
           </Box>
           <Box as="li" mb={2}></Box>
             Chakra UI integration
