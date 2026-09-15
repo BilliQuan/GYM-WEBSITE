@@ -46,10 +46,13 @@ export default function Home() {
         </Text>
         <Box as="ul" pl={4} listStyleType="disc">
           <Box as="li" mb={2}>
-            TypeScript support only comes once 
+            TypeScript support only comes once and you can use it in your components and pages.
           </Box>
           <Box as="li" mb={2}></Box>
-            Chakra UI integration
+            Chakra UI integration built-in with a custom provider and color mode support.
+          </Box>
+          <Box as="li" mb={2}>
+            A simple layout with a header and footer that you can customize without any hassle.
           </Box>
         </Box>
       
