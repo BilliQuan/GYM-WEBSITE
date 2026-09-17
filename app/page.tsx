@@ -1,4 +1,5 @@
 import { Box, Flex, Text, Code } from "@chakra-ui/react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -48,14 +49,17 @@ export default function Home() {
           <Box as="li" mb={2}>
             TypeScript support only comes once and you can use it in your components and pages.
           </Box>
-          <Box as="li" mb={2}></Box>
+          <Box as="li" mb={2}>
             Chakra UI integration built-in with a custom provider and color mode support.
           </Box>
           <Box as="li" mb={2}>
             A simple layout with a header and footer that you can customize without any hassle.
           </Box>
+          <Box mt={6}>
+            <Image src="/images/picture1.jpeg" alt="Hero" width={800} height={600} />
+          </Box>
         </Box>
-      
+      </Box>
     </Flex>
   );
 }
