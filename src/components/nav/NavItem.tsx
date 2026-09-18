@@ -1,15 +1,17 @@
-import React from 'react'
-import Link from 'next/link'
+'use client';
+import React from 'react';
+import NextLink from 'next/link';
+import { Link as ChakraLink, LinkProps as ChakraLinkProps } from '@chakra-ui/react';
 
-type Props = {
-  href: string
-  children: React.ReactNode
-}
+type Props = ChakraLinkProps & {
+  href: string;
+  children: React.ReactNode;
+};
 
-export default function NavItem({ href, children }: Props) {
+export default function NavItem({ href, children, ...rest }: Props) {
   return (
-    <Link href={href} style={{ textDecoration: 'none', color: 'inherit', padding: '0.25rem 0.5rem' }}>
+    <ChakraLink as={NextLink} href={href} {...rest}>
       {children}
-    </Link>
-  )
+    </ChakraLink>
+  );
 }
