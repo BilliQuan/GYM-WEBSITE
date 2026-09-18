@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Provider from "../src/components/provider";
+import Navbar from "../src/components/nav/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -30,7 +31,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             __html: `(function(){try{var s=localStorage.getItem('color-mode');if(s==='dark'){document.documentElement.classList.add('dark');}else if(s==='light'){document.documentElement.classList.remove('dark');}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.classList.add('dark');}}catch(e){} })()`,
           }}
         />
-        <Provider>{children}</Provider>
+          <Navbar />
+          {children}
       </body>
     </html>
   );
