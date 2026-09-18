@@ -1,8 +1,8 @@
-'use client';
-import React from 'react';
-import NavItem from './NavItem';
-import NextLink from 'next/link';
-import { Box, Flex, HStack, Heading, Spacer } from '@chakra-ui/react';
+"use client"
+import React from 'react'
+import NavItem from './NavItem'
+import NextLink from 'next/link'
+import { Box, Flex, HStack, Heading, Spacer } from '@chakra-ui/react'
 
 export default function Navbar() {
   return (
@@ -13,15 +13,23 @@ export default function Navbar() {
         </Heading>
         <Spacer />
         <HStack gap={8} display={{ base: 'none', md: 'flex' }}>
-          <NavItem href="/">Programs</NavItem>
-          <NavItem href="/#features">Schedule</NavItem>
-          <NavItem href="/#testimonials">Trainers</NavItem>
-          <NavItem href="/#pricing">Pricing</NavItem>
-          <NavItem href="/contact" px={6} py={2} bg="blue.500" color="white" borderRadius="md">
+          <NavItem href="/"  _hover={{
+        color: "#ffff",
+      }} textDecoration="none">Programs</NavItem>
+          <NavItem href="/#features" _hover={{
+        color: "#ffff",
+      }} textDecoration="none">Schedule</NavItem>
+          <NavItem href="/#testimonials" _hover={{
+        color: "#ffff",
+      }} textDecoration="none">Trainers</NavItem>
+          <NavItem href="/#pricing" _hover={{
+        color: "#ffff",
+      }} textDecoration="none">Pricing</NavItem>
+          <NavItem href="/contact" px={6} py={2} bg="rgb(233, 150, 25)" color="black" borderRadius="md" textDecoration="none" fontWeight="bold">
             JOIN NOW
           </NavItem>
         </HStack>
       </Flex>
     </Box>
-  );
+  )
 }
