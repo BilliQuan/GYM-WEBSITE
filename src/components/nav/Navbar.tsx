@@ -1,20 +1,27 @@
-import React from 'react'
-import NavItem from './NavItem'
-import Link from 'next/link'
+'use client';
+import React from 'react';
+import NavItem from './NavItem';
+import NextLink from 'next/link';
+import { Box, Flex, HStack, Heading, Spacer } from '@chakra-ui/react';
 
 export default function Navbar() {
   return (
-    <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 2rem' }}>
-      <div style={{ fontWeight: 700 }}>
-        <Link href="/">MyLogo</Link>
-      </div>
-      <div style={{ display: 'flex', gap: '1rem' }}>
-        <NavItem href="/">Programs</NavItem>
-        <NavItem href="/#features">Schedule</NavItem>
-        <NavItem href="/#pricing">Trainers</NavItem>
-        <NavItem href="/#contact">Pricing</NavItem>
-        <NavItem href="/#contact">JOIN NOW</NavItem>
-      </div>
-    </nav>
-  )
+    <Box as="nav" role="navigation">
+      <Flex align="center" py={4} px={{ base: 4, md: 8 }}>
+        <Heading as="h2" size="md">
+          <NextLink href="/">IRONHAUS</NextLink>
+        </Heading>
+        <Spacer />
+        <HStack gap={8} display={{ base: 'none', md: 'flex' }}>
+          <NavItem href="/">Programs</NavItem>
+          <NavItem href="/#features">Schedule</NavItem>
+          <NavItem href="/#testimonials">Trainers</NavItem>
+          <NavItem href="/#pricing">Pricing</NavItem>
+          <NavItem href="/contact" px={6} py={2} bg="blue.500" color="white" borderRadius="md">
+            JOIN NOW
+          </NavItem>
+        </HStack>
+      </Flex>
+    </Box>
+  );
 }
