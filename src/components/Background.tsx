@@ -2,7 +2,10 @@ import Image from 'next/image'
 
 export default function Background() {
   return (
-    <div style={{ position: 'fixed', inset: 0, zIndex: -1 }}>
+    <div
+      aria-hidden="true"
+      style={{ position: 'fixed', inset: 0, zIndex: -9999, pointerEvents: 'none', height: '100vh' }}
+    >
       <Image
         src="/images/picture1.jpeg"
         alt="Background"
@@ -10,7 +13,6 @@ export default function Background() {
         priority
         style={{ objectFit: 'cover' }}
       />
-      <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.35)' }} />
     </div>
   )
 }
