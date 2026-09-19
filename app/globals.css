@@ -19,8 +19,13 @@
   }
 }
 
+html, body, #__next, main {
+  height: 100%;
+}
+
 body {
-  background: var(--background);
+  background: transparent;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }

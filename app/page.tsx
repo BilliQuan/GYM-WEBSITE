@@ -5,15 +5,12 @@ export default function Home() {
   return (
     <main
       style={{
-        height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         padding: '4rem',
-        backgroundImage: 'url(/images/picture1.jpeg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        paddingTop: '88px',
       }}
     >
       <HStack style={{ textAlign: 'center', maxWidth: 960, color: '#fff' }}>
