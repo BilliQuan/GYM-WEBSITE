@@ -20,7 +20,7 @@ export default function Navbar() {
     >
       <Container maxW="8xl">
         <Flex align="center" py={3}>
-          <Heading as="h2" size="md" sx={{ fontWeight: 800 }}>
+         <Heading as="h2" size="md" fontWeight={800}>
             <NextLink href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
               <span style={{ display: 'inline-block' }}>IRON</span>
               <span

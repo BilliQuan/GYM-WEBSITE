@@ -35,15 +35,24 @@ export default function Home() {
       {/* Bottom-right stats */}
       <div style={{ position: 'absolute', right: 56, bottom: 48, display: 'flex', gap: 48, alignItems: 'flex-end', color: 'rgba(255,255,255,0.95)' }}>
         <div style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: 36, fontWeight: 800, color: 'rgb(233,150,25)' }}>12K+</div>
+          <div style={{ fontSize: 36, fontWeight: 800 }}>
+            <span style={{ color: '#fff' }}>12</span>
+            <span style={{ color: 'rgb(233,150,25)', marginLeft: 6 }}>K+</span>
+          </div>
           <div style={{ fontSize: 12, letterSpacing: 2, color: 'rgba(255,255,255,0.6)' }}>MEMBERS</div>
         </div>
         <div style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: 36, fontWeight: 800, color: 'rgb(233,150,25)' }}>48+</div>
+          <div style={{ fontSize: 36, fontWeight: 800 }}>
+            <span style={{ color: '#fff' }}>48</span>
+            <span style={{ color: 'rgb(233,150,25)', marginLeft: 6 }}>+</span>
+          </div>
           <div style={{ fontSize: 12, letterSpacing: 2, color: 'rgba(255,255,255,0.6)' }}>CLASSES / WEEK</div>
         </div>
         <div style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: 36, fontWeight: 800, color: 'rgb(233,150,25)' }}>6+</div>
+          <div style={{ fontSize: 36, fontWeight: 800 }}>
+            <span style={{ color: '#fff' }}>6</span>
+            <span style={{ color: 'rgb(233,150,25)', marginLeft: 6 }}>+</span>
+          </div>
           <div style={{ fontSize: 12, letterSpacing: 2, color: 'rgba(255,255,255,0.6)' }}>YEARS STRONG</div>
         </div>
       </div>
