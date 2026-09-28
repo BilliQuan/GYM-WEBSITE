@@ -12,7 +12,7 @@ export default function Home() {
 
         <h1 style={{
           margin: 0,
-          fontSize: 'clamp(84px, 2vw, 150px)',
+          fontSize: 'clamp(79px, 5vw, 140px)',
           lineHeight: 0.9,
           fontWeight: 700,
           textTransform: 'uppercase',
