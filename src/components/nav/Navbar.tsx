@@ -38,24 +38,24 @@ export default function Navbar() {
             </NextLink>
           </Heading>
           <Spacer />
-          <HStack as="ul" gap={6} display={{ base: 'none', md: 'flex' }}  align="center">
+          <HStack as="ul" gap={6} display={{ base: 'none', md: 'flex' }}  align="center" >
             <li style={{ listStyle: 'none', marginRight: 12 }}>
-              <NavItem href="/" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" fontSize="sm">
+              <NavItem href="/" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" textDecoration="none" fontSize="sm">
                 Programs
               </NavItem>
             </li>
             <li style={{ listStyle: 'none', marginRight: 12 }}>
-              <NavItem href="/#features" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" fontSize="sm">
+              <NavItem href="/#features" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" textDecoration="none" fontSize="sm">
                 Schedule
               </NavItem>
             </li>
             <li style={{ listStyle: 'none', marginRight: 12 }}>
-              <NavItem href="/#testimonials" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" fontSize="sm">
+              <NavItem href="/#testimonials" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" textDecoration="none" fontSize="sm">
                 Trainers
               </NavItem>
             </li>
             <li style={{ listStyle: 'none', marginRight: 12 }}>
-              <NavItem href="/#pricing" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" fontSize="sm">
+              <NavItem href="/#pricing" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" textDecoration="none"    fontSize="sm">
                 Pricing
               </NavItem>
             </li>
