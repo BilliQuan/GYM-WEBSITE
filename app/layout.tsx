@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import Provider from '../src/components/provider';
 import Navbar from '../src/components/nav/Navbar';
+import programs from './programs/programs';
 import Background from '../src/components/Background';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import Page from './page';
+import Programs from './programs/programs';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -33,6 +36,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
            <Provider>
              <Navbar />
              {children}
+             <Programs />
            </Provider>
       </body>
     </html>
