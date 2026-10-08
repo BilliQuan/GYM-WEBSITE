@@ -55,7 +55,7 @@ export default function Navbar() {
               </NavItem>
             </li>
             <li style={{ listStyle: 'none', marginRight: 12 }}>
-              <NavItem href="/#pricing" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" textDecoration="none"    fontSize="sm">
+              <NavItem href="/pricing" color="rgba(255,255,255,0.9)" textTransform="uppercase" letterSpacing="1px" textDecoration="none"    fontSize="sm">
                 Pricing
               </NavItem>
             </li>

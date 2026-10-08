@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
 import Provider from '../src/components/provider';
+import Script from 'next/script';
 import Navbar from '../src/components/nav/Navbar';
-import programs from './programs/programs';
+import Programs from './programs/programs';
+import Pricing from './pricing/page';
 import Background from '../src/components/Background';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import Page from './page';
-import Programs from './programs/programs';
+
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,16 +28,15 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var s=localStorage.getItem('color-mode');if(s==='dark'){document.documentElement.classList.add('dark');}else if(s==='light'){document.documentElement.classList.remove('dark');}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.classList.add('dark');}}catch(e){} })()`,
-          }}
-        />
+        <Script id="color-mode" strategy="beforeInteractive" dangerouslySetInnerHTML={{
+          __html: `(function(){try{var s=localStorage.getItem('color-mode');if(s==='dark'){document.documentElement.classList.add('dark');}else if(s==='light'){document.documentElement.classList.remove('dark');}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.classList.add('dark');}}catch(e){} })()`
+        }} />
            <Background />
            <Provider>
              <Navbar />
              {children}
              <Programs />
+             <Pricing />
            </Provider>
       </body>
     </html>
