@@ -1,10 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main style={{ minHeight: '100vh', position: 'relative', paddingTop :"88px"}}>
-      {/* Absolute-positioned left hero content to match screenshot */}
-      <div style={{ position: 'absolute', left: 56, top: 290, maxWidth: 560, color: '#fff' }}>
+      {/* Hero wrapper - occupies full viewport so following content flows below */}
+      <section style={{ minHeight: '100vh', position: 'relative' }}>
+        {/* Absolute-positioned left hero content to match screenshot */}
+        <div style={{ position: 'absolute', left: 56, top: 290, maxWidth: 560, color: '#fff' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 18 }}>
           <div style={{ width: 48, height: 2, background: 'rgb(233,150,25)' }} />
           <div style={{ color: 'rgba(255,255,255,0.85)', fontSize: 13, fontWeight: 700, letterSpacing: 1 }}>LAGOS · EST. 2018</div>
@@ -56,6 +59,10 @@ export default function Home() {
           <div style={{ fontSize: 12, letterSpacing: 2, color: 'rgba(255,255,255,0.6)' }}>YEARS STRONG</div>
         </div>
       </div>
+      </section>
+
+      {/* removed programs continuation - keep homepage only */}
     </main>
   )
 }
+
